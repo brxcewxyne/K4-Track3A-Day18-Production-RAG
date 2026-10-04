@@ -1,0 +1,81 @@
+{
+  "aggregate": {
+    "faithfulness": 0.8166666666666668,
+    "answer_relevancy": 0.7775374257547633,
+    "context_precision": 0.937499999955625,
+    "context_recall": 0.8583333333333332
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Bao lâu phải đổi mật khẩu một lần?",
+      "worst_metric": "faithfulness",
+      "score": 0.45833333332291665,
+      "diagnosis": "LLM answer is not sufficiently grounded in retrieved evidence / possible hallucination.",
+      "suggested_fix": "Tighten the system/generation prompt and reduce temperature toward 0."
+    },
+    {
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "worst_metric": "context_recall",
+      "score": 0.644416641518012,
+      "diagnosis": "Retrieval is missing relevant evidence.",
+      "suggested_fix": "Improve chunking and/or BM25/retrieval coverage."
+    },
+    {
+      "question": "Nhân viên thử việc có được hưởng bảo hiểm sức khỏe PVI không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.7499999999916667,
+      "diagnosis": "Generated answer is not focused on the user's question.",
+      "suggested_fix": "Rewrite the generation prompt to require a more direct answer."
+    },
+    {
+      "question": "Nghỉ phép không lương 20 ngày cần ai phê duyệt?",
+      "worst_metric": "context_recall",
+      "score": 0.7792061243064519,
+      "diagnosis": "Retrieval is missing relevant evidence.",
+      "suggested_fix": "Improve chunking and/or BM25/retrieval coverage."
+    },
+    {
+      "question": "Nếu cần mua một chiếc laptop 30 triệu cho nhân viên mới, ai phê duyệt và cần gì từ phòng CNTT?",
+      "worst_metric": "faithfulness",
+      "score": 0.7812182296916822,
+      "diagnosis": "LLM answer is not sufficiently grounded in retrieved evidence / possible hallucination.",
+      "suggested_fix": "Tighten the system/generation prompt and reduce temperature toward 0."
+    },
+    {
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.7827435196743067,
+      "diagnosis": "LLM answer is not sufficiently grounded in retrieved evidence / possible hallucination.",
+      "suggested_fix": "Tighten the system/generation prompt and reduce temperature toward 0."
+    },
+    {
+      "question": "Lương thử việc của nhân viên Junior mức cao nhất là bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.7893607722419511,
+      "diagnosis": "LLM answer is not sufficiently grounded in retrieved evidence / possible hallucination.",
+      "suggested_fix": "Tighten the system/generation prompt and reduce temperature toward 0."
+    },
+    {
+      "question": "Thông tin lương thuộc cấp độ phân loại dữ liệu nào?",
+      "worst_metric": "context_recall",
+      "score": 0.84275690343694,
+      "diagnosis": "Retrieval is missing relevant evidence.",
+      "suggested_fix": "Improve chunking and/or BM25/retrieval coverage."
+    },
+    {
+      "question": "Có cần kích hoạt xác thực đa yếu tố (MFA) không?",
+      "worst_metric": "context_recall",
+      "score": 0.8503134107481823,
+      "diagnosis": "Retrieval is missing relevant evidence.",
+      "suggested_fix": "Improve chunking and/or BM25/retrieval coverage."
+    },
+    {
+      "question": "Nhân viên được tài trợ khóa học 25 triệu, nghỉ việc sau 8 tháng hoàn thành khóa học. Phải hoàn trả bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.8512481134259895,
+      "diagnosis": "LLM answer is not sufficiently grounded in retrieved evidence / possible hallucination.",
+      "suggested_fix": "Tighten the system/generation prompt and reduce temperature toward 0."
+    }
+  ]
+}
